@@ -1,5 +1,8 @@
 /* GLOBALS */
 
+*{
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Work Sans', sans-serif;
@@ -10,6 +13,16 @@ body {
 .container {
     width: 90%;
     margin: 0 auto; 
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-heading-h2 {
+    font-size: 36px;
+    font-weight: 700;
+    
 }
 
 /* NAVIGATION */
@@ -100,3 +113,111 @@ body {
     font-weight: 690px;
 
 }
+
+/* OUR REPUTATION SECTION */
+
+.our-reputation-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.reputation-tiles {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.reputation-tile {
+    width: 300px;
+    padding: 20px;
+    
+    border: 2px solid #e0e3eb;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px
+}
+
+.tile-heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tile-description {
+    color: #858EAD;
+    font-size: 18px;
+
+}
+
+.new-reputation {
+    position: relative;
+    background-color: rgba(161, 229, 221, 0.718);
+}
+
+.new-reputation-dot {
+    width: 30px;
+    height: 30px;
+
+    background-color: orange;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+
+/* OUR CREW SECTION */
+.our-crew-section{
+    background-color: hsl(0, 27%, 96%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.our-crew-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.our-crew-list-element-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.our-crew-secton-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.our-crew-list-element {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.our-crew-list-element:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.our-crew-secton-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
